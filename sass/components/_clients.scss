@@ -1,0 +1,27 @@
+.clients {
+  padding: 94px 0 97px;
+}
+
+.clients__list {
+  fill: var(--icon-grey);
+  padding-top: 50px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.clients__item {
+  height: 92px;
+  width: 170px;
+  border: 1px solid var(--icon-grey);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__item:focus,
+.clients__item:hover {
+  fill: var(--project-blue);
+  border-color: var(--project-blue);
+}

@@ -1,0 +1,41 @@
+a:link {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", "Raleway", sans-serif;
+  font-size-adjust: none;
+  color: var(--project-black);
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+:hover,
+:focus {
+  transition: var(--transition-duration);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: center;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

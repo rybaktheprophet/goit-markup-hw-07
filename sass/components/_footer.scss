@@ -1,0 +1,126 @@
+.footer {
+  background-color: var(--background-black);
+  color: #fff;
+  padding: 57px 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.footer__address {
+  font-size: 14px;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.71;
+  padding-top: 20px;
+}
+
+.footer__contact {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.footer__contact--email {
+  text-decoration: none;
+  display: block;
+  padding: 9px 0;
+}
+
+.footer__contact:hover,
+.footer__contact:focus {
+  color: var(--project-blue);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__social {
+  padding-top: 12px;
+}
+
+.footer__header {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--primary-white);
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.footer__icons {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 10px;
+  padding-left: 0;
+  margin: 0;
+  fill: var(--primary-white);
+  padding-top: 20px;
+}
+
+.footer__item {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__item:focus,
+.footer__item:hover {
+  background-color: var(--project-blue);
+}
+
+.footer__svg {
+  margin-top: 5px;
+}
+
+.footer__subscribtion {
+  padding-top: 12px;
+}
+
+.footer__form {
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__input {
+  background-color: var(--background-black);
+  line-height: 1.25;
+  width: 350px;
+  padding: 14px 0 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  outline: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__input:hover,
+.footer__input:focus {
+  background-color: var(--background-black);
+  color: rgba(255, 255, 255, 0.6);
+  border: 2px solid var(--project-blue);
+}
+
+.footer__button {
+  position: relative;
+  padding: 10px 15px 10px 42px;
+  display: flex;
+  align-content: center;
+}
+
+.footer__send {
+  position: absolute;
+  right: 28px;
+}
