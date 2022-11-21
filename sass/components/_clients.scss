@@ -2,7 +2,6 @@
   padding: 94px 0 97px;
 
   &__list {
-    fill: var(--icon-grey);
     padding-top: 50px;
     list-style: none;
     display: flex;
@@ -12,10 +11,11 @@
   }
 
   &__item {
+    fill: var(--icon-grey);
     height: 92px;
     width: 170px;
     border: 1px solid var(--icon-grey);
-    transition: 250ms;
+    transition: fill 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:focus,
