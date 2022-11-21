@@ -30,13 +30,6 @@
   }
 }
 
-.header__contact:hover,
-.header__contact:focus {
-  color: var(--project-blue);
-  transition: var(--transition-duration);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .header__nav {
   color: var(--project-black);
   text-decoration: none;
@@ -103,6 +96,12 @@
   &:hover svg {
     color: var(--project-blue);
     fill: var(--project-blue);
+  }
+  &:hover,
+  &:focus {
+    color: var(--project-blue);
+    transition: var(--transition-duration);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
