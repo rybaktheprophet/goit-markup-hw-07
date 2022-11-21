@@ -45,7 +45,8 @@
 .modal__wrapper {
   display: flex;
   flex-direction: column;
-  padding-inline: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   align-items: center;
 }
 
@@ -54,8 +55,7 @@
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 40px;
-  padding-right: 0;
+
   transition: color border;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,14 +68,14 @@
 }
 
 .modal__input:focus {
-  border: 2px solid var(--project-blue);
+  border: 1px solid var(--project-blue);
 }
 
-.icon__container:focus-within svg {
+.input__cointainer:focus-within svg {
   fill: var(--project-blue);
 }
 
-.icon__container {
+.input__cointainer {
   position: relative;
 }
 
@@ -97,8 +97,11 @@
   letter-spacing: 00.01em;
   color: rgba(117, 117, 117, 0.8);
   padding-top: 12px;
-  padding-left: 16px;
   padding-bottom: 20px;
+}
+
+.modal__input--textarea::placeholder {
+  padding-left: 16px;
 }
 
 .input__description {
