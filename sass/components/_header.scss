@@ -1,35 +1,15 @@
 .header {
   border-bottom: 1px solid #ececec;
-}
 
-.header__content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #fff;
-  font-weight: 500;
-  font-size: 14px;
-  text-decoration: none;
-}
-
-.header__nav--active {
-  position: relative;
-  color: var(--project-blue);
-}
-
-.header__nav--inactive {
-  color: var(--project-black);
-}
-
-.header__nav--active::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  top: 44px;
-  position: absolute;
-  display: block;
-  background: var(--project-blue);
-  border-radius: 2px;
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+  }
 }
 
 .logo {
@@ -40,14 +20,14 @@
   margin-right: 93px;
   margin-top: 25px;
   margin-bottom: 24px;
-}
 
-.logo--black {
-  color: var(--black);
-}
+  &--black {
+    color: var(--black);
+  }
 
-.logo--white {
-  color: var(--primary-white);
+  &--white {
+    color: var(--primary-white);
+  }
 }
 
 .header__contact:hover,
@@ -67,11 +47,31 @@
   margin-right: 345px;
   transition: var(--transition-duration);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header__nav a:hover,
-.header__nav a:focus {
-  color: var(--project-blue);
+  &--active {
+    position: relative;
+    color: var(--project-blue);
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      top: 44px;
+      position: absolute;
+      display: block;
+      background: var(--project-blue);
+      border-radius: 2px;
+    }
+  }
+
+  &--inactive {
+    color: var(--project-black);
+  }
+
+  & a:hover,
+  & a:focus {
+    color: var(--project-blue);
+  }
 }
 
 .header__contact {
@@ -84,44 +84,43 @@
   display: flex;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header__contact--mail {
-  margin-right: 30px;
-}
+  &--margin {
+    margin-right: 30px;
+  }
 
-.header__contact svg {
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  & svg {
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.header__contact:focus,
-.header__contact:hover {
-  color: var(--project-blue);
-  fill: var(--project-blue);
-}
+  &:focus,
+  &:hover {
+    color: var(--project-blue);
+    fill: var(--project-blue);
+  }
 
-.header__contact:hover svg {
-  color: var(--project-blue);
-  fill: var(--project-blue);
+  &:hover svg {
+    color: var(--project-blue);
+    fill: var(--project-blue);
+  }
 }
 
 .header__icon {
   fill: var(--grey);
-  // padding-bottom: 8px;
   margin-right: 10px;
   height: 16px;
   align-items: center;
   transition-property: fill;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.header__icon--mail {
-  fill: var(--grey);
-  padding-top: 1px;
-}
+  &--mail {
+    fill: var(--grey);
+    padding-top: 1px;
+  }
 
-.header__icon--smartphone {
-  position: absolute;
+  &--smartphone {
+    position: absolute;
+  }
 }

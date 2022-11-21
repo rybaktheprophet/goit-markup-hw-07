@@ -17,13 +17,13 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
-.banner__header {
-  font-size: 44px;
-}
+  &__header {
+    font-size: 44px;
+  }
 
-.banner__container {
-  padding-left: 237px;
-  padding-right: 237px;
+  &__container {
+    padding-left: 237px;
+    padding-right: 237px;
+  }
 }
